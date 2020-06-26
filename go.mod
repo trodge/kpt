@@ -2,6 +2,11 @@ module github.com/GoogleContainerTools/kpt
 
 go 1.13
 
+replace (
+	sigs.k8s.io/kustomize/cmd/config => ../kustomize/cmd/config
+	sigs.k8s.io/kustomize/kyaml => ../kustomize/kyaml
+)
+
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.0
 	github.com/go-errors/errors v1.0.1
